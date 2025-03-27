@@ -33,10 +33,17 @@
     img {
       @apply max-w-full align-middle;
     }
+
+    .custom-bg-gradient-light-purple {
+      background: linear-gradient(to bottom, white, #F6E6FF);
+    }
+    .custom-bg-gradient-dark-purple {
+      background: linear-gradient(to bottom, #FFD0F0, #9A46FB);
+    }
   </style>
   <stack name="head" />
 </head>
-<body class="m-0 p-0 w-full [word-break:break-word] [-webkit-font-smoothing:antialiased] {{ page.bodyClass || '' }}">
+<body class="m-0 p-0 w-full custom-bg-gradient-light-purple [word-break:break-word] [-webkit-font-smoothing:antialiased] {{ page.bodyClass || '' }}"
   <if condition="page.preheader">
     <div class="hidden">
       {{{ page.preheader }}}
