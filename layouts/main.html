@@ -43,8 +43,8 @@
   </style>
   <stack name="head" />
 </head>
-<body class="m-0 p-0 w-full custom-bg-gradient-light-purple [word-break:break-word] [-webkit-font-smoothing:antialiased] {{ page.bodyClass || '' }}"
-  <div role="article" aria-roledescription="email" aria-label="{{{ page.title || '' }}}" lang="{{ page.language || 'en' }}">
+<body class="m-0 p-0 w-full [word-break:break-word] [-webkit-font-smoothing:antialiased] {{ page.bodyClass || '' }}">
+  <div role="article" aria-roledescription="email" aria-label="{{{ page.title || '' }}}" lang="{{ page.language || 'en' }}" class="custom-bg-gradient-light-purple">
     <yield />
   </div>
 </body>
